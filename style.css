@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* background: #f6ebda; */
+  background: url(https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2105;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.active {
+  color: #ff902b;
+}
+
+nav ul li a:hover {
+  color: #ff902b;
+}
+
+#centerTitle {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 85px;
+}
+#title1 {
+  font-family: Poppins;
+  font-size: 50px;
+}
+#title2 {
+  font-family: "Pacifico", cursive;
+}
+.but {
+  background-color: #2f2105;
+  border-radius: 30px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.but:hover {
+  background-color: #ff902b;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+.but:hover:after {
+  opacity: 0.5;
+}
+
+.but:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+.but:active:after {
+  opacity: 1;
+}
+
+/* Mobile Screen  view*/
+@media only screen and (max-width: 600px) {
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+  }
+  nav ul li:nth-child(1) {
+    padding: 10px;
+    display: inline;
+  }
+  nav ul li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4),
+  li:nth-child(5),
+  li:nth-child(6) {
+    display: none;
+  }
+  nav ul li:nth-child(7) {
+    display: inline;
+    float: right;
+    padding-right: 10px;
+  }
+  nav ul li:nth-child(8) {
+    display: inline;
+    float: right;
+    padding-right: 10px;
+  }
+  .boost{
+    display: none;
+  }
+  .main{
+    text-align: center;
+    color: #2f2105;
+    font-size: 30px;
+  }
+  .enjoy{
+    font-weight: 600;
+    font-family: Poppins;
+  }
+  .but{
+    margin-top: 90%;
+  }
+}
+
+/* pc or laptop view  */
+
+@media only screen and (min-width: 992px) {
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+  }
+
+  nav ul li {
+    padding: 20px;
+    display: inline;
+  }
+  #search {
+    width: 200px;
+    height: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    outline-color: #ff902b;
+  }
+  .input-icons {
+    display: none;
+  }
+
+  #centerTitle {
+    color: #2f2105;
+    font-size: 50px;
+  }
+  #title2 {
+    font-weight: 20;
+  }
+  .main {
+    padding: 60px;
+  }
+  .enjoy {
+    color: #2f2105;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .boost {
+    color: #7e7d7a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+  }
+  .but {
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+  }
+}
+
+/* Tab view  */
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+  }
+
+  nav ul li {
+    padding: 10px;
+    display: inline;
+  }
+  #search {
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    border: #ff902b;
+  }
+  .input-icons {
+    display: none;
+  }
+  .but {
+    padding: 14px 22px;
+    width: 176px;
+  }
+}
